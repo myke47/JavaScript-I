@@ -10,12 +10,12 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-const example = {
-  id: 0,
-  name: "Example",
-  email: "examples@you.edu",
-  gender: "F"
-};
+// const example = {
+//   id: 0,
+//   name: "Example",
+//   email: "examples@you.edu",
+//   gender: "F"
+// };
 
 // Write your intern objects here:
 const mitzi = {
@@ -29,7 +29,8 @@ const kennan = {
   id: 2,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
-  gender: "M"
+  gender: "M",
+  
 };
 
 const keven = {
@@ -57,21 +58,37 @@ const antonietta = {
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+// console.log(Object.name(mitzi));
+console.log(mitzi.name);
 
 // Kennan's ID
+console.log(kennan.id);
 
 // Keven's email
+console.log(keven.email);
 
 // Gannie's name
+console.log(gannie.name);
 
 // Antonietta's Gender
+console.log(antonietta.gender);
 
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+function logsHello() {
+  console.log('Hello, my name is Kennan!');
+}
+
+logsHello();
+
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+console.log(multiplyNums(3,4));
+function multiplyNums(){
+  const sum = 3 * 4;
+  return sum;
+}
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
